@@ -1,0 +1,14 @@
+This practical helps me to make a   a simple Student Registration Form built using HTML5.
+ It collects essential user information, like name, Email,
+ and Age, and I use  built-in HTML5 form validation features that ensures all the fields correctly filled and there will 
+ be no problem when it goes to server side . and it also helps to collect the right data from clients.
+
+1.The Name field is used to enter the the name in which i use placeholders that will automaticaly remove when someone click on that field or they enter their name in that field.
+
+2.The Email field checks that the input matches a valid email format like "@ "is important and .com is required if it's not present then a error will shown to the user.
+
+3.The Age field accepts only numerical input within a specified range (1–100) to ensure that no one will put another age  which is not relaistic .
+
+this is all about practical no.1
+In this experiment I learnt a lot of new things like attributes and opening and closing tags,types and validation techniques in html.
+
