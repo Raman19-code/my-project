@@ -1,0 +1,6 @@
+In this expeiment I learnt about how to make a responsive UI baking sytem
+i add html and css files ( link css file in html )
+I add two buttons one is deposit and second one is withdraw.
+I add some colors with the help of css.
+I learnt about padding,margin ,differnt fonts and styling the webapages.
+
