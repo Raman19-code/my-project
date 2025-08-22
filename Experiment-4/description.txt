@@ -1,0 +1,13 @@
+Experiment-4: Live Character Counter
+In this experiment, I developed a compact web application that functions as a live character counter. I utilized HTML to construct the layout of the page, including the text area where users can input their messages. CSS was employed to enhance the page's appearance by incorporating colors, borders, a progress bar, and smooth transitions, ensuring the design is tidy and user-friendly. The core functionality was executed using JavaScript, enabling real-time detection of each keystroke and immediate updates to the character count displayed on the screen.
+The application indicates the number of characters entered against the maximum permissible limit, while a progress bar visually illustrates the remaining space. Additionally, the hint messages adapt based on the context—for instance, it encourages users when their text is within the safe range, issues a warning as the limit approaches, and provides an alert when the maximum is exceeded.
+Through this experiment, I gained insights into integrating HTML, CSS, and JavaScript to create an interactive webpage. I learned how events such as typing can trigger JavaScript functions, how CSS can be utilized to emphasize changes, and how a user-friendly design enhances the overall experience. This experiment also highlighted the significance of providing immediate feedback to users, which is beneficial in various real-world applications such as online forms, comments, or social media posts.
+Tools & Technologies Used
+HTML → to establish the structure of the webpage (textarea, labels, counter display)
+CSS → to style the page, incorporate colors, borders, and a progress bar with smooth animations
+JavaScript → to capture user input in real time and dynamically update the character count, progress bar, and hint messages
+Learning Outcomes
+Acquired skills in managing real-time events in JavaScript (such as updates during typing)
+Gained an understanding of how to manipulate DOM elements (altering text, styles, and progress bar width)
+Learned to integrate HTML, CSS, and JavaScript for an interactive project
+understand the importance of user feedback in forms and input fields.
