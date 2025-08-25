@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canvas Freehand Drawing Tool</title>
+<style>
+    body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+    canvas { border: 2px solid #333; cursor: crosshair; }
+</style>
+</head>
+<body>
+
+<h2>Canvas Drawing Tool</h2>
+<canvas id="drawingCanvas" width="800" height="500"></canvas>
+
+<script>
+const canvas = document.getElementById('drawingCanvas');
+const ctx = canvas.getContext('2d');
+
+let isDrawing = false;
+let lastX = 0;
+let lastY = 0;
+
+function getMousePosition(evt) {
+    const rect = canvas.getBoundingClientRect();
+    return {
+        x: evt.clientX - rect.left,
+        y: evt.clientY - rect.top
+    };
+}
+
+canvas.addEventListener('mousedown', (evt) => {
+    isDrawing = true;
+    const pos = getMousePosition(evt);
+    lastX = pos.x;
+    lastY = pos.y;
+});
+
+canvas.addEventListener('mousemove', (evt) => {
+    if (!isDrawing) return;
+    const pos = getMousePosition(evt);
+    
+    // Draw a line from last position to current position
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.lineTo(pos.x, pos.y);
+    ctx.strokeStyle = 'deepskyblue';
+    ctx.lineWidth = 2;
+    ctx.lineCap = 'round';
+    ctx.stroke();
+    
+    lastX = pos.x;
+    lastY = pos.y;
+});
+
+canvas.addEventListener('mouseup', () => {
+    isDrawing = false;
+});
+
+canvas.addEventListener('mouseleave', () => {
+    isDrawing = false;
+});
+</script>
+
+</body>
+</html>
